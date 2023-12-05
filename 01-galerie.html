@@ -66,5 +66,11 @@ img{
     @click="photoAffichee=null"  @keyup.escape.window ="photoAffichee=null">
         <figure><img :src="photoAffichee">
     </div>
+    <div>
+        <img src="https://picsum.photos/id/236/40/60" alt="miniature chiot"
+            @click="imageAffichee = 'https://picsum.photos/id/236/200/300'">
+        <img src="https://picsum.photos/id/237/40/60" alt="miniature chiot"
+            @click="imageAffichee = 'https://picsum.photos/id/237/200/300'">
+    </div>
 </body x-data>
 </html>
