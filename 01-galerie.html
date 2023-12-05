@@ -62,7 +62,8 @@ img{
 <body x-data="{photoAffichee: 'https://picsum.photos/id/237/200/300'}">
     <h1>Galerie</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sint adipisci laboriosam quod praesentium rem voluptatem blanditiis libero sunt deleniti est error debitis, perspiciatis aspernatur commodi qui iste eos earum!</p>
-    <div class="overlay">
+    <div class="overlay"  x-show="photoAffichee" class="overlay" 
+    @click="photoAffichee=null"  @keyup.escape.window ="photoAffichee=null">
         <figure><img :src="photoAffichee">
     </div>
 </body x-data>
