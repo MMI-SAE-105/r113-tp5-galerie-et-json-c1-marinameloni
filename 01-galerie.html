@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <style>
     .overlay {
     position: absolute; 
@@ -58,11 +59,11 @@ img{
 
     </style>
 </head>
-<body x-data="{photoaffichee: 'https://picsum.photos/id/237/200/300',}">
+<body x-data="{photoAffichee: 'https://picsum.photos/id/237/200/300'}">
     <h1>Galerie</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sint adipisci laboriosam quod praesentium rem voluptatem blanditiis libero sunt deleniti est error debitis, perspiciatis aspernatur commodi qui iste eos earum!</p>
     <div class="overlay">
-        <figure><img src="https://picsum.photos/id/237/400/300" alt="image 237... un chiot"></figure>
+        <figure><img :src="photoAffichee">
     </div>
 </body x-data>
 </html>
